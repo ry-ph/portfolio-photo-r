@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio - Snapshot</title>
+  
+  <!-- Google Fontsからエレガントなフォントを読み込み -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Playfair+Display:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Google Fontsから筆記体フォントを読み込み -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Dancing+Script:wght@400;500&family=Pacifico&family=Cormorant+Garamond:wght@300;400&family=Playfair+Display:wght@300;400&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1 class="logo">
+        <a href="index.html">Ryu-Portfolio</a>
+      </h1>
+      
+      <!-- ハンバーガーメニューボタン -->
+      <button class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    
+    <!-- ナビゲーションメニュー -->
+    <nav class="main-nav" id="mainNav">
+      <ul class="nav-list">
+        <li><a href="index.html">home</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="life.html">life</a></li>
+        <li><a href="snapshot.html" class="active">snapshot</a></li>
+        <li><a href="landscape.html">landscape</a></li>
+      </ul>
+      
+      <!-- SNSリンク -->
+      <div class="social-links">
+        <a href="https://twitter.com/Np11Ry" target="_blank" rel="noopener noreferrer">Twitter</a>
+        <a href="https://instagram.com/rk_np0111" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </div>
+    </nav>
+  </header>
+  
+  <!-- ========== 写真ギャラリーページのメインコンテンツ ========== -->
+  <main class="gallery-main">
+    <!-- ページタイトル -->
+    <h2 class="page-title">snapshot</h2>
+    
+    <!-- 画像ギャラリー（2カラムレイアウト） -->
+    <div class="photo-grid">
+       
+      <!-- 横長写真1 -->
+      <div class="photo-item horizontal">
+        <a href="#" class="photo-link" data-image="images/snapshot-01.jpg">
+          <img src="images/snapshot-01.jpg" alt="スナップ写真1">
+        </a>
+      </div>
+      
+      <!-- 縦長写真1 -->
+      <div class="photo-item">
+        <a href="#" class="photo-link" data-image="images/snapshot-02.jpg">
+          <img src="images/snapshot-02.jpg" alt="スナップ写真2">
+        </a>
+      </div>
+      
+      <!-- 縦長写真2 -->
+      <div class="photo-item">
+        <a href="#" class="photo-link" data-image="images/snapshot-03.jpg">
+          <img src="images/snapshot-03.jpg" alt="スナップ写真3">
+        </a>
+      </div>
+      
+      <!-- 横長写真2 -->
+      <div class="photo-item horizontal">
+        <a href="#" class="photo-link" data-image="images/snapshot-04.jpg">
+          <img src="images/snapshot-04.jpg" alt="スナップ写真4">
+        </a>
+      </div>
+      
+      <!-- 横長写真3 -->
+      <div class="photo-item horizontal">
+        <a href="#" class="photo-link" data-image="images/snapshot-05.jpg">
+          <img src="images/snapshot-05.jpg" alt="スナップ写真5">
+        </a>
+      </div>
+      
+      <!-- 縦長写真3 -->
+      <div class="photo-item">
+        <a href="#" class="photo-link" data-image="images/snapshot-06.jpg">
+          <img src="images/snapshot-06.jpg" alt="スナップ写真6">
+        </a>
+      </div>
+      
+      <!-- 縦長写真4 -->
+      <div class="photo-item">
+        <a href="#" class="photo-link" data-image="images/snapshot-07.jpg">
+          <img src="images/snapshot-07.jpg" alt="スナップ写真7">
+        </a>
+      </div>
+      
+      <!-- 横長写真4 -->
+      <div class="photo-item horizontal">
+        <a href="#" class="photo-link" data-image="images/snapshot-08.jpg">
+          <img src="images/snapshot-08.jpg" alt="スナップ写真8">
+        </a>
+      </div>
+      
+      <!-- 縦長写真5 -->
+      <div class="photo-item">
+        <a href="#" class="photo-link" data-image="images/snapshot-09.jpg">
+          <img src="images/snapshot-09.jpg" alt="スナップ写真9">
+        </a>
+      </div>
+      
+    </div>
+    <!-- gallery終了 -->
+  </main>
+  
+  <!-- ========== ライトボックス（ポップアップ表示用） ========== -->
+  <div class="lightbox" id="lightbox">
+    <!-- 閉じるボタン -->
+    <button class="lightbox-close" id="lightboxClose">&times;</button>
+    
+    <!-- 前の写真ボタン -->
+    <button class="lightbox-prev" id="lightboxPrev">‹</button>
+    
+    <!-- 次の写真ボタン -->
+    <button class="lightbox-next" id="lightboxNext">›</button>
+    
+    <!-- 拡大表示される写真 -->
+    <div class="lightbox-content">
+      <img src="" alt="拡大写真" id="lightboxImage">
+    </div>
+  </div>
+  
+  <!-- フッター -->
+  <footer>
+    <p>&copy; Portfolio. All rights reserved.</p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>

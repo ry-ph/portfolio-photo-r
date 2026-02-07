@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ryu ー Portfolio - Home</title>
+  
+  <!-- Google Fontsからエレガントなフォントを読み込み -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Playfair+Display:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- Google Fontsから筆記体フォントを読み込み -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Dancing+Script:wght@400;500&family=Pacifico&family=Cormorant+Garamond:wght@300;400&family=Playfair+Display:wght@300;400&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1 class="logo">
+        <a href="index.html">Ryu-Portfolio</a>
+      </h1>
+      
+      <!-- ハンバーガーメニューボタン -->
+      <button class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    
+    <!-- ナビゲーションメニュー -->
+    <nav class="main-nav" id="mainNav">
+      <ul class="nav-list">
+        <li><a href="index.html">home</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="life.html">life</a></li>
+        <li><a href="snapshot.html">snapshot</a></li>
+        <li><a href="landscape.html">landscape</a></li>
+      </ul>
+      
+      <!-- SNSリンク -->
+      <div class="social-links">
+        <a href="https://twitter.com/Np11Ry" target="_blank" rel="noopener noreferrer">Twitter</a>
+        <a href="https://instagram.com/rk_np0111" target="_blank" rel="noopener noreferrer">Instagram</a>
+      </div>
+    </nav>
+  </header>
+  
+  <!-- ========== ホームページのメインコンテンツ ========== -->
+  <main class="home-main">
+    
+    <!-- カテゴリーカードセクション -->
+    <section class="categories">
+      <div class="category-grid">
+        
+        <!-- Lifeカテゴリー -->
+        <div class="category-card">
+          <a href="life.html">
+            <div class="category-image">
+              <img src="images/life-thumb.jpg" alt="Life Works">
+            </div>
+            <div class="category-info">
+              <h3>Life</h3>
+              <p>偶然の出会い</p>
+            </div>
+          </a>
+        </div>
+        
+        <!-- Snapshotカテゴリー -->
+        <div class="category-card">
+          <a href="snapshot.html">
+            <div class="category-image">
+              <img src="images/snapshot-thumb.jpg" alt="Snapshot Photography">
+            </div>
+            <div class="category-info">
+              <h3>Snapshot</h3>
+              <p>日常の一瞬</p>
+            </div>
+          </a>
+        </div>
+        
+        <!-- Landscapeカテゴリー -->
+        <div class="category-card">
+          <a href="landscape.html">
+            <div class="category-image">
+              <img src="images/landscape-thumb.jpg" alt="Landscape Photography">
+            </div>
+            <div class="category-info">
+              <h3>Landscape</h3>
+              <p>自然風景</p>
+            </div>
+          </a>
+        </div>
+        
+      </div>
+    </section>
+    
+    <!-- SNSボタンセクション -->
+    <section class="social-section">
+      <h2>Follow Me</h2>
+      <div class="social-buttons">
+        <a href="https://twitter.com/Np11Ry" target="_blank" rel="noopener noreferrer" class="social-btn">
+          <span>Twitter</span>
+        </a>
+        <a href="https://instagram.com/rk_np0111/" target="_blank" rel="noopener noreferrer" class="social-btn">
+          <span>Instagram</span>
+        </a>
+      </div>
+    </section>
+    
+  </main>
+  
+  <!-- フッター -->
+  <footer>
+    <p>&copy;  Portfolio. All rights reserved.</p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
