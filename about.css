@@ -1,0 +1,374 @@
+/* ========================================
+   Aboutページ専用スタイル
+======================================== */
+
+/* ページ全体の背景を黒に設定 */
+body {
+  background-color: #0a0a0a;
+  color: #e0e0e0;
+}
+
+/* メインコンテンツエリア */
+.about-main {
+  margin-top: 80px; /* ヘッダー分の余白 */
+}
+
+/* ========================================
+   メインビジュアル（ヒーロー画像）
+======================================== */
+.hero-visual {
+  width: 100%;
+  height: 70vh; /* ビューポート高さの70% */
+  min-height: 400px;
+  max-height: 700px;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 画像を領域にフィット */
+  object-position: center;
+  filter: brightness(0.8); /* 少し暗めに調整 */
+}
+
+/* ========================================
+   ステートメント（理念）セクション
+======================================== */
+.statement-section {
+  padding: 120px 40px;
+  text-align: center;
+  background-color: #000000;
+}
+
+.statement-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.statement-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3rem;
+  line-height: 2.2;
+  letter-spacing: 0.08em;
+  color: #d0d0d0;
+  font-weight: 300;
+}
+
+/* PC表示時のみ改行を表示 */
+.pc-only {
+  display: inline;
+}
+
+/* ========================================
+   プロフィールセクション
+======================================== */
+.profile-section {
+  padding: 100px 40px;
+  background-color: #0a0a0a;
+}
+
+.profile-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* セクションタイトル共通スタイル */
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 0.15em;
+  text-align: center;
+  margin-bottom: 60px;
+  color: #ffffff;
+  position: relative;
+}
+
+/* タイトル下の装飾ライン */
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 1px;
+  background-color: #666;
+  margin: 20px auto 0;
+}
+
+/* プロフィールコンテンツのレイアウト */
+.profile-content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+/* プロフィール画像 */
+.profile-image {
+  flex: 0 0 280px;
+  width: 280px;
+  height: 280px;
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(20%); /* わずかにグレースケール */
+}
+
+/* プロフィールテキスト */
+.profile-text {
+  flex: 1;
+}
+
+.profile-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+.profile-description {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  line-height: 2;
+  letter-spacing: 0.05em;
+  color: #c0c0c0;
+  font-weight: 300;
+}
+
+/* ========================================
+   ブログセクション
+======================================== */
+.blog-section {
+  padding: 100px 40px 120px;
+  background-color: #000000;
+  text-align: center;
+}
+
+.blog-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.blog-description {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  line-height: 2;
+  letter-spacing: 0.05em;
+  color: #b0b0b0;
+  font-weight: 300;
+}
+
+.coming-soon {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #888;
+  font-style: italic;
+}
+
+/* ========================================
+   フッター
+======================================== */
+.about-footer {
+  padding: 60px 40px 40px;
+  background-color: #0a0a0a;
+  border-top: 1px solid #1a1a1a;
+}
+
+/* フッターSNSリンク */
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-social-link {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  color: #999;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+/* ホバー時の下線アニメーション */
+.footer-social-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #fff;
+  transition: width 0.3s ease;
+}
+
+.footer-social-link:hover {
+  color: #fff;
+}
+
+.footer-social-link:hover::after {
+  width: 100%;
+}
+
+/* コピーライト */
+.copyright {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #666;
+  letter-spacing: 0.05em;
+}
+
+/* ========================================
+   レスポンシブデザイン（スマホ対応）
+======================================== */
+
+/* タブレット以下 */
+@media (max-width: 768px) {
+  .hero-visual {
+    height: 50vh;
+    min-height: 300px;
+  }
+  
+  .statement-section {
+    padding: 80px 30px;
+  }
+  
+  .statement-text {
+    font-size: 1.1rem;
+    line-height: 2;
+  }
+  
+  /* PC用の改行を非表示 */
+  .pc-only {
+    display: none;
+  }
+  
+  .profile-section {
+    padding: 80px 30px;
+  }
+  
+  .section-title {
+    font-size: 1.6rem;
+    margin-bottom: 40px;
+  }
+  
+  /* プロフィールを縦並びに */
+  .profile-content {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .profile-image {
+    flex: none;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  
+  .profile-name {
+    font-size: 1.5rem;
+  }
+  
+  .profile-description {
+    font-size: 1rem;
+  }
+  
+  .blog-section {
+    padding: 80px 30px 100px;
+  }
+  
+  .blog-description {
+    font-size: 1rem;
+  }
+  
+  .footer-social {
+    gap: 30px;
+  }
+}
+
+/* スマートフォン */
+@media (max-width: 480px) {
+  .statement-section {
+    padding: 60px 20px;
+  }
+  
+  .statement-text {
+    font-size: 1rem;
+    line-height: 1.9;
+  }
+  
+  .profile-section {
+    padding: 60px 20px;
+  }
+  
+  .section-title {
+    font-size: 1.4rem;
+  }
+  
+  .profile-image {
+    width: 180px;
+    height: 180px;
+  }
+  
+  .profile-name {
+    font-size: 1.3rem;
+  }
+  
+  .blog-section {
+    padding: 60px 20px 80px;
+  }
+  
+  .about-footer {
+    padding: 40px 20px 30px;
+  }
+  
+  .footer-social {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+}
+
+/* ========================================
+   贅沢な余白と洗練された雰囲気の演出
+======================================== */
+
+/* スクロールアニメーション用（オプション） */
+@media (prefers-reduced-motion: no-preference) {
+  .statement-text,
+  .profile-content,
+  .blog-description {
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+  }
+  
+  .profile-content {
+    animation-delay: 0.2s;
+  }
+  
+  .blog-description {
+    animation-delay: 0.3s;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
